@@ -11,7 +11,7 @@ LiquidJson is a convenient way to use JSON objects from scala using a natural sy
         for {n:Int <- json.number} yield {n}
     
   
-* Create a Json object by using the json method against a json encoded String
+* Create a Json object by using the `json` method against a json encoded String
 
         import liquidj.json.Implicits._
         val json = """
