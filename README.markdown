@@ -4,6 +4,8 @@ LiquidJson is a convenient way to use JSON objects from scala using a natural sy
 * Scala member syntax can be used to access property values, and they are implicitly converted to the correct type.
 
         val n:Int = json.number
+        val b:Boolean = json.nested.child
+        val four:Int = json.array(1)
     
    
 * For comprehensions are also available:
@@ -17,7 +19,7 @@ LiquidJson is a convenient way to use JSON objects from scala using a natural sy
         val json = """
           { "number": 9,
             "nested":
-               { "child": true }
+               { "child": true },
             "array": [5,4,3]
           }""".json
 
